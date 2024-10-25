@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - WindowDaoTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>WindowDaoTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.emse.automacorp.dao.html">com.emse.automacorp.dao</a> &gt; WindowDaoTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.071s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="shouldFindAWindowById()"></a>
+<h3 class="failures">shouldFindAWindowById()</h3>
+<span class="code">
+<pre>jakarta.persistence.EntityNotFoundException: Unable to find com.emse.automacorp.model.WindowEntity with id -10
+	at app//org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:190)
+	at app//org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:290)
+	at app//org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:176)
+	at app//org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:314)
+	at app//org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:44)
+	at app//org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:102)
+	at app//com.emse.automacorp.model.WindowEntity$HibernateProxy$K5UjlHHr.getName(Unknown Source)
+	at app//com.emse.automacorp.dao.WindowDaoTest.shouldFindAWindowById(WindowDaoTest.java:20)
+	at java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.4/java.util.ArrayList.forEach(ArrayList.java:1596)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">shouldFindAWindowById()</td>
+<td class="failures">1.071s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>15:23:28.108 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.emse.automacorp.dao.WindowDaoTest]: WindowDaoTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:23:28.408 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.emse.automacorp.AutomacorpApplication for test class com.emse.automacorp.dao.WindowDaoTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-22T15:23:29.204+02:00  INFO 24852 --- [automacorp] [    Test worker] com.emse.automacorp.dao.WindowDaoTest    : Starting WindowDaoTest using Java 21.0.4 with PID 24852 (started by linla in C:\Users\linla\OneDrive\Documents\TB3\automacorp)
+2024-10-22T15:23:29.204+02:00  INFO 24852 --- [automacorp] [    Test worker] com.emse.automacorp.dao.WindowDaoTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-10-22T15:23:29.901+02:00  INFO 24852 --- [automacorp] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-22T15:23:30.048+02:00  INFO 24852 --- [automacorp] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 3 JPA repository interfaces.
+2024-10-22T15:23:30.153+02:00  INFO 24852 --- [automacorp] [    Test worker] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-10-22T15:23:30.421+02:00  INFO 24852 --- [automacorp] [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:29e7def6-82e7-459f-8a5b-0c04048ca571;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-22T15:23:31.050+02:00  INFO 24852 --- [automacorp] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-22T15:23:31.150+02:00  INFO 24852 --- [automacorp] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-22T15:23:31.225+02:00  INFO 24852 --- [automacorp] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-22T15:23:31.905+02:00  INFO 24852 --- [automacorp] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-22T15:23:32.016+02:00  WARN 24852 --- [automacorp] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-22T15:23:33.870+02:00  INFO 24852 --- [automacorp] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists room_entity cascade 
+Hibernate: drop table if exists sp_sensor cascade 
+Hibernate: drop table if exists sp_window cascade 
+Hibernate: drop sequence if exists room_entity_seq
+Hibernate: drop sequence if exists sp_sensor_seq
+Hibernate: drop sequence if exists sp_window_seq
+Hibernate: create sequence room_entity_seq start with 1 increment by 50
+Hibernate: create sequence sp_sensor_seq start with 1 increment by 50
+Hibernate: create sequence sp_window_seq start with 1 increment by 50
+Hibernate: create table room_entity (floor integer not null, target_temperature float(53), current_temperature_id bigint unique, id bigint not null, name varchar(255) not null, primary key (id))
+Hibernate: create table sp_sensor (sensor_value float(53), id bigint not null, name varchar(255) not null, sensor_type enum ('POWER','STATUS','TEMPERATURE'), primary key (id))
+Hibernate: create table sp_window (id bigint not null, room_id bigint not null, window_status_id bigint unique, name varchar(255) not null, primary key (id))
+Hibernate: alter table if exists room_entity add constraint FK2ibc42mr8nogqu9xwjl0pe2hu foreign key (current_temperature_id) references sp_sensor
+Hibernate: alter table if exists sp_window add constraint FKibbfp764e97586wj1qva6oil0 foreign key (room_id) references room_entity
+Hibernate: alter table if exists sp_window add constraint FKqdj6jbtn59whbpgt93n927yjn foreign key (window_status_id) references sp_sensor
+2024-10-22T15:23:33.998+02:00  INFO 24852 --- [automacorp] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-22T15:23:34.738+02:00  INFO 24852 --- [automacorp] [    Test worker] com.emse.automacorp.dao.WindowDaoTest    : Started WindowDaoTest in 6.174 seconds (process running for 8.625)
+Hibernate: select we1_0.id,we1_0.name,we1_0.room_id,r1_0.id,c1_0.id,c1_0.name,c1_0.sensor_type,c1_0.sensor_value,r1_0.floor,r1_0.name,r1_0.target_temperature,ws1_0.id,ws1_0.name,ws1_0.sensor_type,ws1_0.sensor_value from sp_window we1_0 join room_entity r1_0 on r1_0.id=we1_0.room_id left join sp_sensor c1_0 on c1_0.id=r1_0.current_temperature_id left join sp_sensor ws1_0 on ws1_0.id=we1_0.window_status_id where we1_0.id=?
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (C:\Users\linla\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.14.19\154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1\byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.1</a> at 22 oct. 2024, 15:23:36</p>
+</div>
+</div>
+</body>
+</html>
